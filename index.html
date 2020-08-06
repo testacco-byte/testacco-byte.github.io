@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <title>Test form</title>
+</head>
+
+<body>
+    <div id='page-preloader' class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeuOXL0ZHzDNtb5SrRida3vLz_4eE19r9jW8o0NwmgMa78S-g/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+        <h1>Регистрация</h1>
+        <div class="form-element">
+            <span>Адрес электронной почты:</span>
+            <input type="email" name="emailAddress" placeholder="Почта">
+        </div>
+
+        <div class="form-element">
+            <span>Имя и фамилия:</span>
+            <input type="text" name="entry.1756141037" required placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-element radio-buttons">
+            <span>Выберите тему:</span>
+            <label for="Web design">
+                <input type="radio" name="entry.463932427" id="Web design" value="Web design" required>
+                <span>Web design</span>
+                
+            </label>
+            <label for="Mobile">
+                <input type="radio" name="entry.463932427" id="Mobile" value="Mobile" required >
+                <span>Mobile</span>
+                
+            </label>
+        </div>
+        <div class="form-element">
+            <span>Ответ:</span>
+            <textarea name="entry.1655177372" id="" cols="10" rows="2" required></textarea>
+        </div>
+        <button type="submit">Отправить!</button>
+    </form>
+
+</body>
+<script src="preloader.js"></script>
+
+</html>
