@@ -4,55 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
 
-    <title>Test form</title>
 </head>
 
 <body>
-    <div id='page-preloader' class="preloader">
-        <div class="loader">
-
+    <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbzHOy_edcvuY90_IKfyiRjB8qs5Hq6Dmp_8ZwaoMU-aRSfHflM/exec" method="POST" target="_top">
+        <input type="hidden" value="" name="fileContent" id="fileContent">
+        <input type="hidden" value="" name="filename" id="filename">
+        <div class="mail">
+            <label> Електронна пошта: </label><input required type="email" value="" name="email" id="email">
         </div>
-    </div>
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeuOXL0ZHzDNtb5SrRida3vLz_4eE19r9jW8o0NwmgMa78S-g/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-        <h1>Регистрация</h1>
-        <div class="form-element">
-            <span>Адрес электронной почты:</span>
-            <input type="email" name="emailAddress" placeholder="Почта">
+        <div class="nameSurname">
+            <label> Ім'я та прізвище: </label><input required type="text" value="" name="name" id="name">
         </div>
-
-        <div class="form-element">
-            <span>Имя и фамилия:</span>
-            <input type="text" name="entry.1756141037" required placeholder="Введите ваше имя">
+        <div class="Age">
+            <label> Вік: </label><input required type="text" value="" name="age" id="">
         </div>
-
-        <div class="form-element radio-buttons">
-            <span>Выберите тему:</span>
-            <label for="Web design">
-                <input type="radio" name="entry.463932427" id="Web design" value="Web design" required>
-                <span>Web design</span>
-                
-            </label>
-            <label for="Mobile">
-                <input type="radio" name="entry.463932427" id="Mobile" value="Mobile" required >
-                <span>Mobile</span>
-                
-            </label>
+        <div class="Telegram">
+            <label> Telegram: </label><input required type="text" value="" name="telegram" id="telegram">
         </div>
-        <div class="form-element">
-            <span>Ответ:</span>
-            <textarea name="entry.1655177372" id="" cols="10" rows="2" required></textarea>
+        <div class="number">
+            <label>Номер телефону: </label><input required type="text" value="" name="phone" id="phone">
         </div>
-        <button type="submit">Отправить!</button>
+        <div class="uni">
+            <label> Університет: </label><input required type="text" value="" name="university" id="university">
+        </div>
+        <div class="fac-cr-gr">
+            <label> Факультет, курс, група: </label><input required type="text" value="" name="faculty-course-group" id="faculty-course-group">
+        </div>
+        <div class="rol">
+            <h3>Роль на хакатоні:</h3>
+            <label> Розробник(ця): </label><input type="checkbox" value="Розробник(ця)" name="role" id="role"><br/>
+            <label> Дизайнер(ка): </label><input type="checkbox" value="Дизайнер(ка)" name="role" id="role"><br/>
+            <label> Маркетолог: </label><input type="checkbox" value="Маркетолог:" name="role" id="role"><br/>
+            <label> Аналітик: </label><input  type="checkbox" value="Аналітик" name="role" id="role"><br/>
+        </div>
+        <div class="tech">
+            <label> Якими технологіями володієш?: </label><input required type="text" value="" name="technology" id="technology">
+        </div>
+        <div class="tea">
+            <h3>Скільки чашок чаю випиваєш за день?:</h3>
+            <label> 0 </label><input type="radio" value="0" name="cups" id="cups">
+            <label> 1-3 </label><input type="radio" value="1-3" name="cups" id="cups">
+            <label> 4-6 </label><input type="radio" value="4-6" name="cups" id="cups">
+            <label> 7-9 </label><input type="radio" value="7-9" name="cups" id="cups">
+            <label> 10+ </label><input  type="radio" value="10+" name="cups" id="cups">
+        </div>
+        <div class="exp">
+            <label> Що хотів(ла) би отримати від участі у хакатоні?: </label><input required type="text" value="" name="expectations" id="expectations">
+        </div>
+        <div class="CV">
+            <h3>CV</h3>
+            <input id="attach" name="attach" type="file" />
+        </div>
+        <div class="cat">
+            <h3>Категорія:</h3>
+            <label> Web </label><input required type="radio" value="Web" name="category" id="category">
+            <label> Mobile </label><input required type="radio" value="Mobile" name="category" id="category">
+        </div>
+        <div class="teamname">
+            <label> Назва команди: </label><input required type="text" value="" name="team-name" id="team-name">
+        </div>
+        <h4>Заповнюючи цю реєстраційну форму, Ви добровільно погоджуєтеся дотримуватися загальноприйнятих умов участі у заході, дотримуватись визначених в постанові Кабінету Міністрів України №641 від 22.07.2020 року рекомендацій та обмежень пов’язаних поширенням
+            гострої респіраторної хвороби COVID-19, спричиненої коронавірусом SARS-CoV-2, використовувати надані організаторами та/або самостійно забезпечити себе необхідними засобами індивідуального захисту, дотримуватись соціальної дистанції та уникати
+            тісного контакту з іншими учасниками заходу.</h4>
+        <div class="ag1">
+            <label> Погоджуюсь </label><input  type="radio" value="Погоджуюсь" name="agree1" id="agree1">
+        </div>
+        <h4>Я даю згоду на обробку персональних данних.</h4>
+        <div class="ag2">
+            <label> Погоджуюсь </label><input type="radio" value="Погоджуюсь" name="agree2" id="agree2">
+        </div>
+		    <input value="Відправити" type="button" name="button" onclick="UploadFile();" />
     </form>
 
+    <script>
+        function UploadFile() {
+            var reader = new FileReader();
+            var file = document.getElementById('attach').files[0];
+            if (file) {
+                reader.onload = function() {
+                    document.getElementById('fileContent').value = reader.result;
+                    document.getElementById('filename').value = file.name;
+                    //document.getElementById('uploadForm').submit();
+					submitForm();
+                }
+                reader.readAsDataURL(file);
+                return;
+            } else {
+                //document.getElementById('uploadForm').submit();
+				submitForm();
+            }
+        }
+		function submitForm(){
+			var form = document.getElementById('uploadForm');
+			for(var i=0; i < form.elements.length; i++){
+			if(form.elements[i].value === '' && form.elements[i].hasAttribute('required') || ((form.role[0].checked==false) && (form.role[1].checked==false)&&
+			(form.role[2].checked==false)&& (form.role[3].checked==false)) || ((form.cups[0].checked==false) && (form.cups[1].checked==false)&&
+			(form.cups[2].checked==false) &&(form.cups[3].checked==false) && (form.cups[4].checked==false)) || ((form.category[0].checked==false) && (form.category[1].checked==false))
+			|| form.agree1[0] == false || form.agree2[0] == false){
+			alert('Перевірте, чи усі дані заповнені!');
+			return false;
+					}
+				}
+			form.submit();
+  };
+    </script>
 </body>
-<script src="preloader.js"></script>
 
 </html>
