@@ -112,6 +112,7 @@
             .banner {
                 background-size: 100% auto;
                 background-position: top;
+                height: 100vh;
             }
             .container {
                 padding-top: 100px;
@@ -131,6 +132,7 @@
             .banner {
                 background-size: 100% auto;
                 background-position: top;
+                height: 140vh;
             }
             .container {
                 padding-top: 200px;
@@ -146,6 +148,10 @@
         }
         
         @media screen and (min-width: 768px) {
+            .banner {
+                height: 140vh;
+                background-size: cover;
+            }
             .container {
                 padding-top: 250px;
                 margin: 0;
@@ -161,6 +167,10 @@
         /* TABLET LANDSCAPE / DESKTOP */
         
         @media screen and (min-width: 1024px) {
+            .banner {
+                height: 200vh;
+                background-size: cover;
+            }
             .container {
                 padding-top: 310px;
                 margin: 0 auto;
@@ -175,6 +185,10 @@
         }
         
         @media screen and (min-width: 1440px) {
+            .banner {
+                height: 208vh;
+                background-size: cover;
+            }
             .container {
                 padding-top: 310px;
                 margin: 0 auto;
