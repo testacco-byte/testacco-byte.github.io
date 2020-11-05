@@ -58,13 +58,10 @@
 }
 
 .banner {
-    height: 200vh;
-    background: url('../images/divlogo.png') no-repeat;
+    background-image: url(../images/divlogo.png);
     background-size: cover;
     background-color: #010120;
     background-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 .banner__info {
@@ -221,6 +218,7 @@ a:hover {
     text-align: right;
     font-size: 1.5rem;
     text-shadow: 0px 0px 12px rgba(139, 17, 215, 0.78);
+    padding-bottom: 4%;
 }
 
 .head {
@@ -325,13 +323,23 @@ a:hover {
 
 .front {
     border: 5px solid white;
-    box-shadow: 0px 0px 18px 5px rgba(139, 17, 215, 0.78);
+    //box-shadow: 0px 0px 18px 5px rgba(139, 17, 215, 0.78);
+    animation: pulse .5s infinite alternate ease-in-out;
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #FFFFFF;
     text-shadow: 0px 0px 12px rgba(139, 17, 215, 0.78);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 18px 5px rgba(139, 17, 215, 0.78);
+    }
+    100% {
+        box-shadow: 0px 0px 18px 10px rgba(139, 17, 215, 0.78);
+    }
 }
 
 .how {
